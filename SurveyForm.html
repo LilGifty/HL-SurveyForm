@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="/project/FreeCodeCamp/Survey Form/SFstyle.css">
+</head>
+<body>
+    <h1 id="title">Healthy Lifestyle and Wellness Survey</h1>
+    <p id="description">We are commited to helping individuals lead healthier lives. This is designed to gather insights about your lifestyle habits, including exercise, diet, sleep, and stress management. Your feedback will help us understand common wellness practices and improve resources for a balanced, healthy life. Please take a few minutes to share your experiences!</p>
+    <form id="survey-form" action="" method="post">
+        <div>
+            <label id="name-label" for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+        </div>
+        <div>
+            <label id="email-label" for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email address" required>
+
+        </div>
+        <div>
+            <label id="number-label" for="number">Age</label>
+            <input type="number" id="number" placeholder="Enter your age" min="12" max="120" required>
+        </div>
+        <div>
+            <fieldset>
+                <legend>How often do you exercise?</legend>
+                <label for="">
+                    <input type="radio" name="exercise" value="ex1" checked> Daily
+                </label>
+                <label for="">
+                    <input type="radio" name="exercise" value="ex2"> 3-4 times a week
+                </label>
+                <label for="">
+                    <input type="radio" name="exercise" value="ex3"> 1-2 times a week
+                </label>
+                <label for="">
+                    <input type="radio" name="exercise" value="ex4"> Rarely
+                </label>
+                <label for="">
+                    <input type="radio" name="exercise" value="ex5"> Never
+                </label>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+               <legend>How many hours of sleep do you get on average?</legend>
+               <label for="">
+                   <input type="radio" name="sleep" value="sl1" checked> Less than 5 hours
+               </label>
+               <label for="">
+                   <input type="radio" name="sleep" value="sl2"> 5-6 hours
+               </label>
+               <label for="">
+                  <input type="radio" name="sleep" value="sl3"> 7-8 hours
+               </label>
+               <label for="">
+                  <input type="radio" name="sleep" value="sl4"> More than 8 hours
+               </label>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Do you follow any specific diet?</legend>
+                <label>
+                    <input type="checkbox" value="c1"> Vegan
+                </label>
+                <label>
+                    <input type="checkbox" value="c2"> Vegetarian
+                </label>
+                <label>
+                    <input type="checkbox" value="c3"> Keto
+                </label>
+                <label>
+                    <input type="checkbox" value="c4"> Paleo
+                </label>
+                <label>
+                    <input type="checkbox" value="c5"> None of the above
+                </label>
+            </fieldset>
+        </div>
+        <div>
+            <label for="dropdown">How would you rate your stress level?</label>
+            <select name="" id="dropdown" required>
+                <option value="0">Select an option</option>
+                <option value="1">Low</option>
+                <option value="2">Moderate</option>
+                <option value="3">High</option>
+            </select>
+        </div>
+        <div>
+            <label for="activities">What activities help you relax the most?</label>
+            <textarea id="activities" placeholder="E.g. yoga, reading, meditation, etc."></textarea>
+        </div>
+        <div>
+            <fieldset>
+                <legend>How important is mental health to you</legend>
+                <label>
+                    <input type="checkbox" value="m1"> Very important
+                </label>
+                <label>
+                    <input type="checkbox" value="m2"> Somewhat important
+                </label>
+                <label>
+                    <input type="checkbox" value="m3"> Not important
+                </label>
+            </fieldset>
+        </div>
+        <div>
+            <label for="comments">Any additional comments or suggestions for maintaining a healthy lifestyle?</label>
+            <textarea id="comments" placeholder="Share your thoughts"></textarea>
+        </div>
+        <div>
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
